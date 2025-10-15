@@ -1,0 +1,24 @@
+{
+  "testEnvironment": "node",
+  "preset": "ts-jest",
+  "testPathIgnorePatterns": ["/node_modules/", "/build/"],
+  "roots": ["<rootDir>/src"],
+  "maxWorkers": 1,
+  "setupFiles": ["<rootDir>/jest.setup.js"],
+  "moduleNameMapper": {
+    "^@api/(.*)$": "<rootDir>/src/api/$1",
+    "^@controllers/(.*)$": "<rootDir>/src/api/controllers/$1",
+    "^@middleware/(.*)$": "<rootDir>/src/api/middleware/$1",
+    "^@routes/(.*)$": "<rootDir>/src/api/routes/$1",
+    "^@services$": "<rootDir>/src/services",
+    "^@database/(.*)$": "<rootDir>/src/database/$1",
+    "^@models$": "<rootDir>/src/database/models",
+    "^@repositories$": "<rootDir>/src/database/repositories",
+    "^@shared/(.*)$": "<rootDir>/src/shared/$1",
+    "^@constants/(.*)$": "<rootDir>/src/shared/constants/$1",
+    "^@errors/(.*)$": "<rootDir>/src/shared/errors/$1",
+    "^@types/(.*)$": "<rootDir>/src/shared/types/$1",
+    "^@utils$": "<rootDir>/src/shared/utils",
+    "^@config/(.*)$": "<rootDir>/src/config/$1"
+  }
+}

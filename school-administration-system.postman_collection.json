@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "91fa2404-864d-40d6-9940-957b6183172b",
+		"name": "school-administration-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32131543",
+		"_collection_link": "https://bold-sunset-358985.postman.co/workspace/My-Workspace~082ce54a-c9a1-4481-85a2-5b64ac94c085/collection/32131543-91fa2404-864d-40d6-9940-957b6183172b?action=share&source=collection_link&creator=32131543"
+	},
+	"item": [
+		{
+			"name": "File Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"contentType": "multipart/form-data",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "localhost:3000/api/upload",
+				"description": "Upload file to school-administration-system"
+			},
+			"response": []
+		},
+		{
+			"name": "Healtcheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"contentType": "multipart/form-data",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "localhost:3000/api/healthcheck",
+				"description": "Healthcheck for application"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student List (External)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/students?class=2&offset=1&limit=2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"students"
+					],
+					"query": [
+						{
+							"key": "class",
+							"value": "2"
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Retrieving student list from external"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student Listing",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Class Name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Workload Report",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
